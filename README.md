@@ -14,12 +14,12 @@ apt-get install -y git
 
 ## Installation
 
-* Online
+* Shell script
 ```bash
 curl -fsSL https://github.com/hh2333/oh-my-termux/raw/master/online-install.sh | bash
 ```
 
-* Clone
+* Git
 ```bash
 git clone https://github.com/hh2333/oh-my-termux.git && cd oh-my-termux && ./install.sh
 ```
