@@ -1,8 +1,8 @@
 # oh-my-termux
 
-[中文](README_CN.md)
+[English](README.md)
 
-## Requirement
+## 要求
 
 * Curl
 ```bash
@@ -14,9 +14,9 @@ apt-get install -y curl
 apt-get install -y git
 ```
 
-## Installation
+## 安装
 
-* Shell script
+* Shell 脚本
 ```bash
 curl -fsSL https://github.com/hh2333/oh-my-termux/raw/master/online-install.sh | bash
 ```
@@ -26,6 +26,6 @@ curl -fsSL https://github.com/hh2333/oh-my-termux/raw/master/online-install.sh |
 git clone https://github.com/hh2333/oh-my-termux.git && cd oh-my-termux && ./install.sh
 ```
 
-## License
+## 开源协议
 
-This project is released using MIT license.
+本项目使用 MIT 许可协议发布。
