@@ -4,8 +4,8 @@
 
 DIR="$(pwd)"
 
-echo " [ ] Installing dependencies..."
-apt-get update && apt-get install -y git zsh
+echo " [ ] Installing dependency..."
+apt-get update && apt-get install -y zsh
 echo " [*] Succesfully installed!"
 
 echo " [ ] Adding config..."
