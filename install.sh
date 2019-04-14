@@ -11,11 +11,12 @@ echo " [*] Succesfully installed!"
 echo " [ ] Adding config..."
 if [ -d $HOME/.termux ]; then
 mv $HOME/.termux $HOME/.termux.bak
-mv $DIR/.termux $HOME/.termux
 fi
 if [ ! -d $HOME/.termux ]; then
-mv $DIR/.termux $HOME/.termux
+mkdir $HOME/.termux
 fi
+mv $DIR/.termux/font.ttf $HOME/.termux/font.ttf
+mv $DIR/.termux/termux.properties $HOME/.termux/termux.properties
 echo " [*] Succesfully Added!"
 
 echo " [ ] Cloning oh-my-zsh files..."
