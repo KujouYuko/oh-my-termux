@@ -4,11 +4,6 @@
 
 ## 要求
 
-* Curl
-```bash
-apt-get install -y curl
-```
-
 * Git
 ```bash
 apt-get install -y git
