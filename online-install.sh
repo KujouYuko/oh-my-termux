@@ -1,6 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
-## Author : TH779
-## Email  : tongsj2333@gmail.com
+#
+# Author: TH779
+# Email : tongsj2333@gmail.com
+#
 
 DIR="$(pwd)"
 
@@ -10,10 +12,10 @@ echo " [*] Succesfully installed!"
 
 echo " [ ] Adding config..."
 if [ -d $HOME/.termux ]; then
-mv $HOME/.termux $HOME/.termux.bak
+    mv $HOME/.termux $HOME/.termux.bak
 fi
 if [ ! -d $HOME/.termux ]; then
-mkdir $HOME/.termux
+    mkdir $HOME/.termux
 fi
 curl -fsLo $HOME/.termux/font.ttf https://github.com/hh2333/oh-my-termux/raw/master/.termux/font.ttf
 curl -fsLo $HOME/.termux/termux.properties https://github.com/hh2333/oh-my-termux/raw/master/.termux/termux.properties
