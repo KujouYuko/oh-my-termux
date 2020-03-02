@@ -7,7 +7,7 @@
 DIR="$(pwd)"
 
 echo " [ ] Installing dependencies..."
-apt-get update && apt-get install -y git zsh
+apt-get update && apt-get install -y git
 echo " [*] Succesfully installed!"
 
 echo " [ ] Adding config..."
@@ -21,15 +21,32 @@ curl -fsLo $HOME/.termux/font.ttf https://github.com/hh2333/oh-my-termux/raw/mas
 curl -fsLo $HOME/.termux/termux.properties https://github.com/hh2333/oh-my-termux/raw/master/.termux/termux.properties
 echo " [*] Succesfully Added!"
 
-echo " [ ] Cloning oh-my-zsh files..."
-git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh --depth=1
-echo " [*] Succesfully cloned!"
+read -p "Which shell do you want to use (zsh / fish / bash)? " option
+case $option in
+    zsh | z)
+        echo " [ ] Installing zsh..."
+        apt-get install -y zsh
+        echo " [*] Done."
 
-echo " [ ] Setting zsh..."
-cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
-sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/' $HOME/.zshrc
-chsh -s zsh
-echo " [*] Succesfully!"
+        echo " [ ] Cloning oh-my-zsh files..."
+        git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh --depth=1
+        echo " [*] Succesfully cloned!"
+
+        echo " [ ] Setting zsh..."
+        cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
+        sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/' $HOME/.zshrc
+        chsh -s zsh
+        echo " [*] Succesfully!"
+        ;;
+    fish | f)
+        echo " [ ] Installing fish..."
+        apt-get install -y fish
+        echo " [*] Done."
+        ;;
+    *)
+        echo "You will continue to use bash."
+        ;;
+esac
 
 echo " [ ] Getting storage permission and reload termux..."
 termux-setup-storage
