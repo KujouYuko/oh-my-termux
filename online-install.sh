@@ -39,8 +39,9 @@ case $option in
         echo " [*] Succesfully!"
         ;;
     fish | f)
-        echo " [ ] Installing fish..."
+        echo " [ ] Installing and set up fish..."
         apt-get install -y fish
+        chsh -s fish
         echo " [*] Done."
         ;;
     *)
