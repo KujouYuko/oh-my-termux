@@ -13,7 +13,7 @@ apt-get install -y git
 
 * Shell script
 ```bash
-curl -fsSL https://github.com/hh2333/oh-my-termux/raw/master/online-install.sh | bash
+curl -fsSL https://github.com/hh2333/oh-my-termux/raw/master/online-install.sh > online-install.sh && chmod +x online-install.sh && bash online-install.sh
 ```
 
 * Git
