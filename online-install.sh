@@ -17,8 +17,8 @@ fi
 if [ ! -d $HOME/.termux ]; then
     mkdir $HOME/.termux
 fi
-curl -fsLo $HOME/.termux/font.ttf https://github.com/hh2333/oh-my-termux/raw/master/.termux/font.ttf
-curl -fsLo $HOME/.termux/termux.properties https://github.com/hh2333/oh-my-termux/raw/master/.termux/termux.properties
+curl -fsLo $HOME/.termux/font.ttf https://github.com/KujouYuko/oh-my-termux/raw/master/.termux/font.ttf
+curl -fsLo $HOME/.termux/termux.properties https://github.com/KujouYuko/oh-my-termux/raw/master/.termux/termux.properties
 echo " [*] Succesfully Added!"
 
 read -p "Which shell do you want to use (zsh / fish / bash)? " option

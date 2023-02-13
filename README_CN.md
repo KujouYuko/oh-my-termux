@@ -13,12 +13,12 @@ apt-get install -y git
 
 * Shell 脚本
 ```bash
-sh -c "$(curl -fsSL https://github.com/hh2333/oh-my-termux/raw/master/online-install.sh)"
+sh -c "$(curl -fsSL https://github.com/KujouYuko/oh-my-termux/raw/master/online-install.sh)"
 ```
 
 * Git
 ```bash
-git clone https://github.com/hh2333/oh-my-termux.git && cd oh-my-termux && ./install.sh
+git clone https://github.com/KujouYuko/oh-my-termux.git && cd oh-my-termux && ./install.sh
 ```
 
 ## 开源协议
