@@ -2,23 +2,10 @@
 
 [中文](README_CN.md)
 
-## Requirement
-
-* Git
-```bash
-apt-get install -y git
-```
-
 ## Installation
 
-* Shell script
 ```bash
 sh -c "$(curl -fsSL https://github.com/KujouYuko/oh-my-termux/raw/master/online-install.sh)"
-```
-
-* Git
-```bash
-git clone https://github.com/KujouYuko/oh-my-termux.git && cd oh-my-termux && ./install.sh
 ```
 
 ## License
